@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>patients DB</title>
+</head>
+<body>
+<h1>Hello Welcome to Java Hospital!</h1>
+<h3>To insert the data, please enter the following credentials</h3>
+<form action='Insert' method='get'>
+Name:  <input type="text" name="name"><br>
+ID:  <input type="text" name="id"><br>
+Age: <input type="text" name="age"><br>
+Date of Admission:  <input type="text" name="doa"><br>
+Cause of Admission: <input type="text" name="cause"><br>
+Doctor: <input type="text" name="doc"><br>
+Treatment proposed:  <input type="text" name="treatment"><br>
+<input type='submit' value='add' >
+<h3>To delete the data, please enter name</h3>
+</form>
+<br>
+<form action='Delete' method='get'>
+Name:  <input type="text" name="name">
+<input type='submit'  value='delete'>
+</form>
+<br>
+<h3>To update the data, please enter original(from) and new(to) name</h3>
+<form action='Update' method='get'>
+From :  <input type="text" name="from">
+To :  <input type="text" name="to">
+<input type='submit' value='edit'>
+</form>
+<br>
+<h3>To view the data, please enter name</h3>
+<form action='View' method='post'>
+Name:  <input type="text" name="name">
+
+<input type='submit'  value='view'><br>
+</form>
+
+
+</body>
+</html>
