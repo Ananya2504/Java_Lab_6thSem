@@ -94,11 +94,14 @@ class CustomerInterface implements ActionListener{
       f3.setVisible(true);
     }
     else if(e.getSource()==print){
+    	showDialog();
       int total=Integer.parseInt(quantity.getText())*items.get(itemid.getText());
       bill.setText(itemid.getText()+"\nTotal : "+total+"\nDiscount : 30%\nFinal : "+ discount*total);
-      
     }
-  }   
+  }
+  public void showDialog() {
+	  JOptionPane.showMessageDialog(f3,"You are eligible to get a discount of "+(int)(discount*100)+"%");
+  }
 }
 
 class Main {
